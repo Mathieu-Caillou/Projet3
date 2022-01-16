@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+.logo {
+  text-align: center;
+  margin: 40px 0 0 0;
+}
+
+.logo img {
+  max-width: 392px;
+  max-height: 68px;
+}
+
+.adresse {
+  text-align: center;
+  background-color: #eaeaea;
+  margin: 20px 0 0 0;
+  padding: 20px 0 20px 0;
+  border: none;
+  -webkit-box-shadow: inset 0 1px 3px black;
+          box-shadow: inset 0 1px 3px black;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  text-align: center;
+  margin: 0;
+}
+
+.menu--txt {
+  font-size: 30px;
+  font-weight: 300;
+  padding: 10px 0 10px 0;
+}
+
+.menu--txt__bold {
+  font-weight: 400;
+}
+
+.menu--btn {
+  border: none;
+  background: #FF79DA;
+  background: linear-gradient(168deg, #FF79DA 0%, #9356DC 86%);
+  width: 250px;
+  height: 50px;
+  border-radius: 30px;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 30px 0 30px 0;
+}
+
+.Fonction {
+  background-color: white;
+  padding-left: 5.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 45px;
+}
+
+.Fonction--title {
+  font-size: 1.45em;
+  padding-top: 28px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.Fonction--btn {
+  height: 75px;
+  width: 92%;
+  background: #f7f7f7;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-box-shadow: 0 0 20px #c1c1c1;
+          box-shadow: 0 0 20px #c1c1c1;
+}
+
+.Fonction--btn__num {
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+  width: 25px;
+  height: 21px;
+  text-align: center;
+  padding-top: 4px;
+  font-size: 0.9em;
+  position: absolute;
+  left: -10px;
+  padding-right: 3px;
+}
+
+.Fonction--btn__icon {
+  padding-left: 23px;
+  width: 25px;
+  font-size: 1.2em;
+  color: #858585;
+  z-index: 1;
+}
+
+.Fonction--btn__txt {
+  padding-left: 23px;
+}
+
+.Fonction--btn__list {
+  list-style: none;
+}
+
+.Restaurants {
+  width: 100%;
+  background-color: #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding-bottom: 110px;
+}
+
+.Restaurants--link {
+  text-decoration: none;
+}
+
+.Restaurants--new {
+  position: absolute;
+  top: 0.9em;
+  right: 0.85em;
+  background-color: #99E2D0;
+  color: #008766;
+  padding: 10px 15px 10px 15px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.Restaurants--title {
+  text-align: center;
+  margin: 0 0 0 -27%;
+  padding: 20px 0 0 0;
+}
+
+.Restaurants--card {
+  position: relative;
+  text-decoration: none;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 7px #c1c1c1;
+          box-shadow: 0 0 7px #c1c1c1;
+  width: 690px;
+}
+
+.Restaurants--card__icon {
+  position: absolute;
+  right: 4px;
+  bottom: 28px;
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Restaurants--card__icon:hover .Restaurants--card__icon--hover {
+  opacity: 1;
+}
+
+.Restaurants--card__icon--hover {
+  -webkit-transform: translateX(-99%);
+          transform: translateX(-99%);
+  background: #9356DC;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.Restaurants--card__img {
+  height: 360px;
+  width: 690px;
+  background-color: #fff;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: -5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Restaurants--card__txt {
+  min-width: 31px;
+  min-height: 77px;
+  border-radius: 0 0 15px 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  padding: 15px 0 0px 20px;
+  color: black;
+}
+
+.Restaurants--card__txt p {
+  margin-top: 5px;
+}
+
+.footer {
+  background-color: #353535;
+  height: 173px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 25px;
+  padding-left: 6%;
+  font-size: 1em;
+}
+
+.footer--txt {
+  color: white;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  font-weight: 300;
+}
+
+.footer--title {
+  color: white;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.footer--link__txt {
+  color: white;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.footer--link__icon {
+  color: white;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  font-size: 0.75em;
+  width: 15px;
+}
+/*# sourceMappingURL=index.css.map */
