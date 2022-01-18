@@ -18,14 +18,13 @@ body{
   
 }
 
-.logo {
+.title {
     text-align: center;
-    margin: 40px 0 0 0;
+    margin: -55px 0 0 0;
+    font-family: "Shrikhand";
+    padding: 72px 0 0px 0;
 }
-.logo img {
-    max-width: 392px;
-    max-height: 68px;
-}
+
 .adresse {
     text-align: center;
     background-color: #eaeaea;
@@ -41,9 +40,9 @@ body{
     margin: 0;
     
     &--txt {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 300;
-        padding: 10px 0 10px 0;
+        padding: 25px 0 0 0;
         &__bold {
             font-weight: 400;
             
@@ -68,14 +67,13 @@ body{
 
 .Fonction {
     background-color: white;
-     padding-left: 5.3%;
+     padding: 0 0 17px 7px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 45px;
+    
     &--title {
         font-size: 1.45em;
-        padding-top: 28px;
-        padding-bottom: 10px;
+        padding: 28px 0 32px 8px;
         width: 100%;
     }
     &--btn {
@@ -92,6 +90,10 @@ body{
         cursor: pointer;
         position: relative;
         box-shadow: 0 0 20px #c1c1c1;
+        &:hover {
+            background-color: #f5edff;
+        }
+        
         &__num {
             border-radius: 50%;
              background-color: #9356DC;
@@ -111,6 +113,9 @@ body{
             font-size: 1.2em;
             color: #858585;
             z-index: 1;
+            &:hover {
+                color: $color-primaire;
+            }
         }
         &__txt {
             padding-left: 23px;
@@ -154,6 +159,10 @@ body{
         box-shadow: 0 0 7px #c1c1c1;
         width: 690px;
 
+        @media all and (max-width: 992px) {
+            width: 80%;
+        }
+
         &__icon {
             position: absolute;
             right: 4px;
@@ -182,6 +191,11 @@ body{
             border-radius: 15px 15px 0 0;
             margin-bottom: -5px;
             object-fit: cover;
+
+            @media all and (max-width: 992px) {
+                height: 110px;
+                width: 100%;
+            }
         }
         &__txt{
             min-width: 31px;

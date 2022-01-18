@@ -159,7 +159,7 @@ body{
     opacity: 0;
     animation: card-apparition 1s ease-in-out both;
     border: none;
-    @for $i from 1 through 10 {
+    @for $i from 1 through 9 {
         &--#{$i} {
             animation-delay: $apparition-delay * $i
         }

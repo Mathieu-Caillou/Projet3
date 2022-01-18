@@ -12,14 +12,11 @@ body {
   font-weight: 400;
 }
 
-.logo {
+.title {
   text-align: center;
-  margin: 40px 0 0 0;
-}
-
-.logo img {
-  max-width: 392px;
-  max-height: 68px;
+  margin: -55px 0 0 0;
+  font-family: "Shrikhand";
+  padding: 72px 0 0px 0;
 }
 
 .adresse {
@@ -39,9 +36,9 @@ body {
 }
 
 .menu--txt {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 300;
-  padding: 10px 0 10px 0;
+  padding: 25px 0 0 0;
 }
 
 .menu--txt__bold {
@@ -65,7 +62,7 @@ body {
 
 .Fonction {
   background-color: white;
-  padding-left: 5.3%;
+  padding: 0 0 17px 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,13 +70,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 45px;
 }
 
 .Fonction--title {
   font-size: 1.45em;
-  padding-top: 28px;
-  padding-bottom: 10px;
+  padding: 28px 0 32px 8px;
   width: 100%;
 }
 
@@ -104,6 +99,10 @@ body {
           box-shadow: 0 0 20px #c1c1c1;
 }
 
+.Fonction--btn:hover {
+  background-color: #f5edff;
+}
+
 .Fonction--btn__num {
   border-radius: 50%;
   background-color: #9356DC;
@@ -124,6 +123,10 @@ body {
   font-size: 1.2em;
   color: #858585;
   z-index: 1;
+}
+
+.Fonction--btn__icon:hover {
+  color: #9356DC;
 }
 
 .Fonction--btn__txt {
@@ -181,6 +184,12 @@ body {
   width: 690px;
 }
 
+@media all and (max-width: 992px) {
+  .Restaurants--card {
+    width: 80%;
+  }
+}
+
 .Restaurants--card__icon {
   position: absolute;
   right: 4px;
@@ -217,6 +226,13 @@ body {
   margin-bottom: -5px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media all and (max-width: 992px) {
+  .Restaurants--card__img {
+    height: 110px;
+    width: 100%;
+  }
 }
 
 .Restaurants--card__txt {

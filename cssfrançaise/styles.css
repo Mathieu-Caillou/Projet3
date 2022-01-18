@@ -268,11 +268,6 @@ body {
           animation-delay: 0.675s;
 }
 
-.menu--10 {
-  -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
-}
-
 .menu__title {
   margin: 15px 0 5px 0;
   letter-spacing: 0.2px;
