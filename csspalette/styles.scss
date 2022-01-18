@@ -88,11 +88,12 @@ body{
     &__favorite {
         position: absolute;
         display: flex;
-        top: 15%;
-        left: 85%;
+        top: 3%;
+        left: 90%;
         font-size: 1.7em;
         @media all and (max-width: 992px) {
-            top: 3%;            
+            top: 3%;   
+            left: 85%;         
         }
         &--hover {
             transform: translateX(-99%);
@@ -108,9 +109,6 @@ body{
             .restaurant__favorite--hover {
                 opacity: 1;
             }
-        }
-        @media all and (min-width: 992px) {
-            top: 3%;            
         }
     }
     @media all and (min-width: 992px) {

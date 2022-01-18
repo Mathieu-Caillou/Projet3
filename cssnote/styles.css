@@ -123,8 +123,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   top: 3%;
-  left: 85%;
+  left: 90%;
   font-size: 1.7em;
+}
+
+@media all and (max-width: 992px) {
+  .restaurant__favorite {
+    top: 3%;
+    left: 85%;
+  }
 }
 
 .restaurant__favorite--hover {
@@ -143,18 +150,6 @@ body {
 
 .restaurant__favorite:hover .restaurant__favorite--hover, .restaurant__favorite:focus .restaurant__favorite--hover {
   opacity: 1;
-}
-
-@media all and (min-width: 992px) {
-  .restaurant__favorite {
-    top: 4%;
-  }
-}
-
-@media all and (min-width: 1185px) {
-  .restaurant__favorite {
-    top: 6%;
-  }
 }
 
 @media all and (min-width: 992px) {
