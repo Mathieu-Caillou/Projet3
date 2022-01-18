@@ -88,9 +88,12 @@ body{
     &__favorite {
         position: absolute;
         display: flex;
-        top: 3%;
+        top: 15%;
         left: 85%;
         font-size: 1.7em;
+        @media all and (max-width: 992px) {
+            top: 3%;            
+        }
         &--hover {
             transform: translateX(-99%);
                 background: #9356DC;
@@ -107,11 +110,7 @@ body{
             }
         }
         @media all and (min-width: 992px) {
-            top: 4%;            
-        }
-        @media all and (min-width: 1185px) {
-            top: 6%;
-            
+            top: 3%;            
         }
     }
     @media all and (min-width: 992px) {
