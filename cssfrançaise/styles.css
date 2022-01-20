@@ -25,6 +25,48 @@
   }
 }
 
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@-webkit-keyframes grow {
+  0%, 100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(1.8);
+    transform: scaleY(1.8);
+  }
+}
+
+@keyframes grow {
+  0%, 100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(1.8);
+    transform: scaleY(1.8);
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -36,6 +78,54 @@ body {
   font-family: 'Raleway', sans-serif;
   background-color: #f7f7f7;
   color: black;
+}
+
+.loader--container {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  -webkit-animation: loader 0.5s ease-in-out 2.5s forwards;
+          animation: loader 0.5s ease-in-out 2.5s forwards;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#loader-6 span {
+  display: inline-block;
+  width: 10px;
+  height: 50px;
+  background-color: #99E2D0;
+}
+
+#loader-6 span:nth-child(1) {
+  -webkit-animation: grow 1s ease-in-out infinite;
+          animation: grow 1s ease-in-out infinite;
+}
+
+#loader-6 span:nth-child(2) {
+  -webkit-animation: grow 1s ease-in-out 0.15s infinite;
+          animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+#loader-6 span:nth-child(3) {
+  -webkit-animation: grow 1s ease-in-out 0.30s infinite;
+          animation: grow 1s ease-in-out 0.30s infinite;
+}
+
+#loader-6 span:nth-child(4) {
+  -webkit-animation: grow 1s ease-in-out 0.45s infinite;
+          animation: grow 1s ease-in-out 0.45s infinite;
 }
 
 .header {
@@ -219,48 +309,48 @@ body {
 }
 
 .menu--1 {
-  -webkit-animation-delay: 0.075s;
-          animation-delay: 0.075s;
+  -webkit-animation-delay: 4.25s;
+          animation-delay: 4.25s;
 }
 
 .menu--2 {
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
 }
 
 .menu--3 {
-  -webkit-animation-delay: 0.225s;
-          animation-delay: 0.225s;
+  -webkit-animation-delay: 4.75s;
+          animation-delay: 4.75s;
 }
 
 .menu--4 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 
 .menu--5 {
-  -webkit-animation-delay: 0.375s;
-          animation-delay: 0.375s;
+  -webkit-animation-delay: 5.25s;
+          animation-delay: 5.25s;
 }
 
 .menu--6 {
-  -webkit-animation-delay: 0.45s;
-          animation-delay: 0.45s;
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
 }
 
 .menu--7 {
-  -webkit-animation-delay: 0.525s;
-          animation-delay: 0.525s;
+  -webkit-animation-delay: 5.75s;
+          animation-delay: 5.75s;
 }
 
 .menu--8 {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
 }
 
 .menu--9 {
-  -webkit-animation-delay: 0.675s;
-          animation-delay: 0.675s;
+  -webkit-animation-delay: 6.25s;
+          animation-delay: 6.25s;
 }
 
 .menu__title {

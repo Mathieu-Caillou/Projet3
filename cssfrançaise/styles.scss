@@ -6,7 +6,7 @@ $color-primaire:#9356DC;
 $color-sec: #FF79DA;
 $color-third: #99E2D0;
 $animation-duration: 0.5s;
-$apparition-delay: 0.075s;
+$apparition-delay: 4s;
 
 @keyframes card-apparition {
     0% {
@@ -16,6 +16,32 @@ $apparition-delay: 0.075s;
     100% {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+@keyframes loader {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+
+  @keyframes grow{
+    0%, 100%{
+      -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+      -o-transform: scaleY(1);
+      transform: scaleY(1);
+    }
+  
+    50%{
+      -webkit-transform: scaleY(1.8);
+      -ms-transform: scaleY(1.8);
+      -o-transform: scaleY(1.8);
+      transform: scaleY(1.8);
     }
   }
 
@@ -31,6 +57,42 @@ body{
     color: black;
 }
 
+.loader--container{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    animation: loader 0.5s ease-in-out 2.5s forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+    
+  #loader-6 span{
+    display: inline-block;
+    width: 10px;
+    height: 50px;
+    background-color: $color-third;
+  }
+  
+  #loader-6 span:nth-child(1){
+    animation: grow 1s ease-in-out infinite;
+  }
+  
+  #loader-6 span:nth-child(2){
+    animation: grow 1s ease-in-out 0.15s infinite;
+  }
+  
+  #loader-6 span:nth-child(3){
+    animation: grow 1s ease-in-out 0.30s infinite;
+  }
+  
+  #loader-6 span:nth-child(4){
+    animation: grow 1s ease-in-out 0.45s infinite;
+  }
 
 .header {
     width: 100%;
@@ -158,7 +220,7 @@ body{
     border: none;
     @for $i from 1 through 9 {
         &--#{$i} {
-            animation-delay: $apparition-delay * $i
+            animation-delay: $apparition-delay + 0.25s *$i; 
         }
     }
     &__title {
