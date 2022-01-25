@@ -207,6 +207,12 @@ body {
   }
 }
 
+@media all and (max-width: 300px) {
+  .restaurant__name {
+    font-size: 1.5em;
+  }
+}
+
 .restaurant__favorite {
   position: absolute;
   display: -webkit-box;
@@ -385,6 +391,12 @@ body {
   transition: width 0.5s ease-in-out;
 }
 
+@media all and (max-width: 300px) {
+  .menu__text {
+    padding-right: 15px;
+  }
+}
+
 .menu__price {
   font-weight: bold;
   display: block;
@@ -399,6 +411,13 @@ body {
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+@media all and (max-width: 300px) {
+  .menu__price {
+    right: 5px;
+    padding-right: 0px;
+  }
 }
 
 .menu__checked {
@@ -424,6 +443,12 @@ body {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   -webkit-transform-origin: 100% 50%;
           transform-origin: 100% 50%;
+}
+
+@media all and (max-width: 300px) {
+  .menu__checked {
+    width: 43px;
+  }
 }
 
 .menu__checked i {
