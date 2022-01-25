@@ -237,10 +237,6 @@ body{
         overflow: hidden;
         text-overflow: ellipsis;
         transition: width $animation-duration ease-in-out;
-
-        @media all and (max-width: 300px) {
-          font-size: 1.5rem;
-        }
     }
     
     &__text {

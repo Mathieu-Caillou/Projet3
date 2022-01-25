@@ -372,12 +372,6 @@ body {
   transition: width 0.5s ease-in-out;
 }
 
-@media all and (max-width: 300px) {
-  .menu__title {
-    font-size: 1.5rem;
-  }
-}
-
 .menu__text {
   text-align: start;
   font-weight: 300;
