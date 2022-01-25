@@ -374,7 +374,7 @@ body {
 
 @media all and (max-width: 300px) {
   .menu__title {
-    padding-right: 15px;
+    font-size: 1.5rem;
   }
 }
 
@@ -394,8 +394,7 @@ body {
 
 @media all and (max-width: 300px) {
   .menu__text {
-    right: 5px;
-    padding-right: 0px;
+    padding-right: 15px;
   }
 }
 
@@ -413,6 +412,13 @@ body {
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+@media all and (max-width: 300px) {
+  .menu__price {
+    right: 5px;
+    padding-right: 0px;
+  }
 }
 
 .menu__checked {

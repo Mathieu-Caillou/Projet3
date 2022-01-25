@@ -173,6 +173,11 @@ body{
             bottom: 28px;
             font-size: 25px;
             display: flex;
+
+            @media all and (max-width: 300px) {
+                right: -13px;
+            }
+            
             &:hover &--hover {
                 opacity: 1;
             }

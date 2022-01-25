@@ -239,9 +239,10 @@ body{
         transition: width $animation-duration ease-in-out;
 
         @media all and (max-width: 300px) {
-          padding-right: 15px;
+          font-size: 1.5rem;
         }
     }
+    
     &__text {
         text-align: start;
         font-weight: 300;
@@ -255,8 +256,7 @@ body{
         transition: width $animation-duration ease-in-out;
 
         @media all and (max-width: 300px) {
-          right: 5px;
-          padding-right: 0px;
+          padding-right: 15px;
         }
     }   
     &__price {
@@ -270,6 +270,11 @@ body{
         padding-top: 41px;
         padding-right: 20px;
         transition: transform $animation-duration ease-in-out;
+
+        @media all and (max-width: 300px) {
+          right: 5px;
+          padding-right: 0px;
+        }
     }
     &__checked {
         background-color: $color-third;
@@ -287,7 +292,7 @@ body{
         @media all and (max-width: 300px) {
           width: 43px;
         }
-        
+
         & i {
             color: white;
             font-size: 20px;
